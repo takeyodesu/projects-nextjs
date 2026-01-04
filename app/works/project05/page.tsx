@@ -1,16 +1,19 @@
 import Image from "next/image";
 import ExternalLinkButton from "@/components/ExternalLinkButton";
 import BackToTopButton from "@/components/BackToTopButton";
-export default function ProjectPage01() {
+
+export default function ProjectPage05() {
   return (
     <main className="px-8 py-20 max-w-5xl mx-auto">
       {/* タイトル */}
-      <h1 className="text-4xl font-bold mb-8">読売新聞 紙面ビューアー</h1>
+      <h1 className="text-4xl font-bold mb-8">
+        ホロアースクリエイターツールズ
+      </h1>
 
       {/* メインビジュアル */}
       <Image
-        src="/works/01-01.png"
-        alt="紙面ビューアー"
+        src="/works/05-01.png"
+        alt="ホロアースクリエイターツールズ"
         width={1200}
         height={800}
         className="border-2 border-zinc-800 mb-12"
@@ -18,7 +21,7 @@ export default function ProjectPage01() {
       />
       <div className="mb-12">
         <ExternalLinkButton
-          href="https://www.yomiuri.co.jp/newviewer/"
+          href="https://creator.holoearth.com/creator/items/"
           label="View Website"
         />
       </div>
@@ -26,39 +29,34 @@ export default function ProjectPage01() {
       {/* 説明 */}
       <section className="mt-16 space-y-12">
         <p className="space-y-6 text-lg leading-relaxed">
-          大手新聞社のリニューアル案件。
-          ブラウザ上で新聞画像を検索/閲覧できるWEBアプリケーションや、
-          社内管理システムなどの計9プロジェクトにUI/UXデザイナーとして参画した。（2022年2月〜2024年1月）
+          メタバースサービスのUGCサービス新規開発案件にUIデザイナーとして参画した。(2024年3月〜2025年9月)
         </p>
         <Image
-          src="/works/01-02.png"
-          alt="紙面ビューアー"
+          src="/works/05-02.png"
+          alt="ホロアースクリエイターツールズ"
           width={1200}
           height={800}
           className="border-2 border-zinc-800 mb-12"
           unoptimized
         />
         <p className="space-y-6 text-lg leading-relaxed">
-          設計の段階から参加し要望を聞き入れ、 競合他社/類似サービスの調査や、
-          ターゲット層の利用シーンなどを考察しながら
-          エンドユーザー目線での制作に心掛けた。
-        </p>
-        <p className="space-y-6 text-lg leading-relaxed">
-          その他、販促物などのグラフィック業務や
-          フロントエンド開発にも携わった。
+          イラスト画像を3Dアバターの服に貼り付け
+          オリジナルアイテムを作って販売することができる。
+          また販売アイテムの管理や、売上などが確認できる。
         </p>
         <Image
-          src="/works/01-03.png"
-          alt="紙面ビューアー"
+          src="/works/05-03.png"
+          alt="ホロアースクリエイターツールズ"
           width={1200}
           height={800}
           className="border-2 border-zinc-800 mb-12"
           unoptimized
         />
         <p className="space-y-6 text-lg leading-relaxed">
-          2024年4月に施行される「改正障害者差別解消法」
-          のWEBアクセシビリティ義務化対応についてmiCheckerを導入し「JIS X
-          8341-3:2016」規格において、AAAを達成した。
+          UGC類似サービスを参考にクリエイターが使いやすくわかりやすいツールを目指し制作した。
+        </p>
+        <p className="space-y-6 text-lg leading-relaxed">
+          またこのサービスの審査運用サイトの設計デザイン開発も行った。
         </p>
       </section>
 
@@ -71,7 +69,7 @@ export default function ProjectPage01() {
 
         <div>
           <dt className="font-semibold">Tech</dt>
-          <dd className="text-zinc-600">Vue.js / PHP / SCSS</dd>
+          <dd className="text-zinc-600">React / TypeScript / Panda CSS</dd>
         </div>
       </dl>
       {/* もどるボタン */}

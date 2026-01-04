@@ -2,6 +2,7 @@ import Image from "next/image";
 import WorkCard from "@/components/WorkCard";
 import SocialIcon from "@/components/SocialIcon";
 import FirstView from "@/components/FirstView";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
   return (
@@ -66,27 +67,63 @@ export default function Home() {
       {/* =====================
         実績リスト
       ===================== */}
-      <section className="px-8 py-16" id="works">
-        <h2 className="mb-12 text-3xl font-semibold ">Works</h2>
+      <h2 className="overflow-hidden border-y-2 border-zinc-800 py-4 bg-zinc-50">
+        <div className="relative w-full overflow-hidden">
+          <div className="flex w-max animate-marquee">
+            {/* 1セット目 */}
+            <span className="mr-12 text-3xl font-semibold">Works</span>
+            <span className="mr-12 text-3xl font-semibold">Works</span>
+            <span className="mr-12 text-3xl font-semibold">Works</span>
 
+            {/* 2セット目（完全に同じ） */}
+            <span className="mr-12 text-3xl font-semibold">Works</span>
+            <span className="mr-12 text-3xl font-semibold">Works</span>
+            <span className="mr-12 text-3xl font-semibold">Works</span>
+          </div>
+        </div>
+      </h2>
+      <section className="px-8 py-16" id="works">
         <div className="flex flex-wrap gap-24">
           <WorkCard
             title="ホロアースクリエイターツールズ"
             image="/works/05-01.png"
-            href="/works/project01"
+            href="/works/project05"
           />
           <WorkCard
             title="ホロアースマーケットプレイスLP"
             image="/works/06-01.png"
-            href="/works/project02"
+            href="/works/project06"
           />
           <WorkCard
             title="ホロアースWEBショップ"
             image="/works/07-01.png"
+            href="/works/project07"
+          />
+          <WorkCard
+            title="読売新聞 紙面ビューアー"
+            image="/works/01-01.png"
+            href="/works/project01"
+          />
+          <WorkCard
+            title="グラフィック"
+            image="/works/04-10.png"
+            href="/works/project04"
+          />
+          <WorkCard
+            title="色覚異常"
+            image="/works/02-01.png"
+            href="/works/project02"
+          />
+          <WorkCard
+            title="映画ポスター"
+            image="/works/03-01.png"
             href="/works/project03"
           />
         </div>
       </section>
+      <div className="flex justify-center mb-12">
+        <ScrollToTop />
+      </div>
       <section className="bg-zinc-50 py-2">
         <p className="text-xs text-center text-zinc-500">
           © 2026 takeyodesu. All Rights Reserved.
