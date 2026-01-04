@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { asset } from "@/asset";
 import TypewriterText from "@/components/TypewriterText";
 import { useEffect, useState } from "react";
 
@@ -17,14 +18,14 @@ export default function FirstView() {
       {/* ウィンドウヘッダー */}
       <div
         className={`
-    relative   /* ← これ重要 */
+    relative
     flex justify-between p-2
     bg-zinc-200 border-2 border-b-0 border-zinc-800
     transition-all duration-700
     ${mounted ? "opacity-100" : "opacity-0"}
   `}
       >
-        <Image src="/favicon.png" alt="" width={24} height={24} />
+        <Image src={asset("/favicon.png")} alt="" width={24} height={24} />
 
         {/* 右側アイコン */}
         <div className="flex gap-2">
@@ -125,7 +126,12 @@ export default function FirstView() {
             ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}
           `}
         >
-          <Image src="/kuma.png" alt="うちの猫です" width={120} height={160} />
+          <Image
+            src={asset("/kuma.png")}
+            alt="うちの猫です"
+            width={120}
+            height={160}
+          />
           <p className="text-xs font-bold bg-zinc-50 p-2 border-2 border-zinc-800 mt-1">
             ※この画像はうちの熊です
           </p>

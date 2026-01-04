@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/asset";
 import ExternalLinkButton from "@/components/ExternalLinkButton";
 import BackToTopButton from "@/components/BackToTopButton";
 
@@ -11,7 +12,7 @@ export default function ProjectPage06() {
       {/* メインビジュアル */}
 
       <Image
-        src="/works/06-01.png"
+        src={asset("/works/06-01.png")}
         alt="マーケットプレイスLP"
         width={1200}
         height={800}
@@ -33,7 +34,7 @@ export default function ProjectPage06() {
           構成やビジュアルのディレクション、デザインまで担当した。
         </p>
         <Image
-          src="/works/06-02.png"
+          src={asset("/works/06-02.png")}
           alt="マーケットプレイスLP"
           width={1200}
           height={800}
@@ -42,7 +43,7 @@ export default function ProjectPage06() {
         />
 
         <Image
-          src="/works/06-03.png"
+          src={asset("/works/06-03.png")}
           alt="マーケットプレイスLP"
           width={1200}
           height={800}
@@ -53,7 +54,7 @@ export default function ProjectPage06() {
           編集ツールでよく見かけるUIパーツやオブジェクトをモチーフにすることで、制作に携わる方々にとって親しみやすく、共感を得やすいデザインを意識した。
         </p>
         <Image
-          src="/works/06-04.png"
+          src={asset("/works/06-04.png")}
           alt="マーケットプレイスLP"
           width={1200}
           height={800}

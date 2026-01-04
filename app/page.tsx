@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/asset";
 import WorkCard from "@/components/WorkCard";
 import SocialIcon from "@/components/SocialIcon";
 import FirstView from "@/components/FirstView";
@@ -13,9 +14,13 @@ export default function Home() {
       <section
         className="min-h-[90vh] px-8 py-16 
       flex items-center justify-center
-      bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.05)),url('/bg-grid.png')]
-    bg-cover bg-center
+      bg-cover bg-center
       "
+        style={{
+          backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.05)), url(${asset(
+            "/bg-grid.png"
+          )})`,
+        }}
       >
         <FirstView />
       </section>
@@ -25,7 +30,7 @@ export default function Home() {
       ===================== */}
       <section className="flex flex-wrap gap-12 justify-center md:flex-nowrap px-8 py-16 bg-zinc-200">
         <Image
-          src="/profile.png"
+          src={asset("/profile.png")}
           alt="プロフィール画像"
           width={200}
           height={200}

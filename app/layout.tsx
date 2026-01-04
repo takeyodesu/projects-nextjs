@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import ClientLayout from "./ClientLayout";
 import "./globals.css";
+const isProd = process.env.NODE_ENV === "production";
+const prefix = isProd ? "/projects-nextjs" : "";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +29,9 @@ export default function RootLayout({
     <html lang="ja">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{
+          ["--asset-bg-grid" as any]: `${prefix}/bg-grid.png`,
+        }}
       >
         <ClientLayout>{children}</ClientLayout>
       </body>

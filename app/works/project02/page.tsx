@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/asset";
 import ExternalLinkButton from "@/components/ExternalLinkButton";
 import BackToTopButton from "@/components/BackToTopButton";
 
@@ -10,7 +11,7 @@ export default function ProjectPage02() {
 
       {/* メインビジュアル */}
       <Image
-        src="/works/02-01.png"
+        src={asset("/works/02-01.png")}
         alt="色覚異常"
         width={1200}
         height={800}
@@ -31,7 +32,7 @@ export default function ProjectPage02() {
           インスタグラム上で色覚異常を体験することができるフィルターを作成した。
         </p>
         <Image
-          src="/works/02-02.png"
+          src={asset("/works/02-02.png")}
           alt="色覚異常"
           width={1200}
           height={800}
@@ -48,7 +49,7 @@ export default function ProjectPage02() {
           フィルター5作品の他、色覚異常やユニバーサルデザインに関する投稿も作成。
         </p>
         <Image
-          src="/works/02-03.png"
+          src={asset("/works/02-03.png")}
           alt="色覚異常"
           width={1200}
           height={800}

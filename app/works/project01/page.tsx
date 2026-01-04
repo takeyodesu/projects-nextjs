@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/asset";
 import ExternalLinkButton from "@/components/ExternalLinkButton";
 import BackToTopButton from "@/components/BackToTopButton";
 export default function ProjectPage01() {
@@ -9,7 +10,7 @@ export default function ProjectPage01() {
 
       {/* メインビジュアル */}
       <Image
-        src="/works/01-01.png"
+        src={asset("/works/01-01.png")}
         alt="紙面ビューアー"
         width={1200}
         height={800}
@@ -31,7 +32,7 @@ export default function ProjectPage01() {
           社内管理システムなどの計9プロジェクトにUI/UXデザイナーとして参画した。（2022年2月〜2024年1月）
         </p>
         <Image
-          src="/works/01-02.png"
+          src={asset("/works/01-02.png")}
           alt="紙面ビューアー"
           width={1200}
           height={800}
@@ -48,7 +49,7 @@ export default function ProjectPage01() {
           フロントエンド開発にも携わった。
         </p>
         <Image
-          src="/works/01-03.png"
+          src={asset("/works/01-03.png")}
           alt="紙面ビューアー"
           width={1200}
           height={800}

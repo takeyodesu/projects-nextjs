@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/asset";
 import ExternalLinkButton from "@/components/ExternalLinkButton";
 import BackToTopButton from "@/components/BackToTopButton";
 
@@ -12,7 +13,7 @@ export default function ProjectPage05() {
 
       {/* メインビジュアル */}
       <Image
-        src="/works/05-01.png"
+        src={asset("/works/05-01.png")}
         alt="ホロアースクリエイターツールズ"
         width={1200}
         height={800}
@@ -32,7 +33,7 @@ export default function ProjectPage05() {
           メタバースサービスのUGCサービス新規開発案件にUIデザイナーとして参画した。(2024年3月〜2025年9月)
         </p>
         <Image
-          src="/works/05-02.png"
+          src={asset("/works/05-02.png")}
           alt="ホロアースクリエイターツールズ"
           width={1200}
           height={800}
@@ -45,7 +46,7 @@ export default function ProjectPage05() {
           また販売アイテムの管理や、売上などが確認できる。
         </p>
         <Image
-          src="/works/05-03.png"
+          src={asset("/works/05-03.png")}
           alt="ホロアースクリエイターツールズ"
           width={1200}
           height={800}

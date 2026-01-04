@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/asset";
 
 type SocialIconProps = {
   href: string;

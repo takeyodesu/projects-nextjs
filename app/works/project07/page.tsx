@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/asset";
 import ExternalLinkButton from "@/components/ExternalLinkButton";
 import BackToTopButton from "@/components/BackToTopButton";
 
@@ -11,7 +12,7 @@ export default function ProjectPage07() {
       {/* メインビジュアル */}
 
       <Image
-        src="/works/07-01.png"
+        src={asset("/works/07-01.png")}
         alt="マーケットプレイスLP"
         width={1200}
         height={800}
@@ -34,7 +35,7 @@ export default function ProjectPage07() {
           一般的なファッションECサイトの設計をベースに、メタバース特有の仕様を取り入れ、直感的でスムーズな操作性を実現した。
         </p>
         <Image
-          src="/works/07-02.png"
+          src={asset("/works/07-02.png")}
           alt="マーケットプレイスLP"
           width={1200}
           height={800}
@@ -46,7 +47,7 @@ export default function ProjectPage07() {
           約3ヶ月の短い期間で開発しリリースした。
         </p>
         <Image
-          src="/works/07-03.png"
+          src={asset("/works/07-03.png")}
           alt="マーケットプレイスLP"
           width={1200}
           height={800}

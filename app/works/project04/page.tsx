@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/asset";
 import BackToTopButton from "@/components/BackToTopButton";
 
 export default function ProjectPage04() {
@@ -9,7 +10,7 @@ export default function ProjectPage04() {
 
       {/* メインビジュアル */}
       <Image
-        src="/works/04-10.png"
+        src={asset("/works/04-10.png")}
         alt="グラフィック"
         width={1200}
         height={800}
@@ -26,7 +27,7 @@ export default function ProjectPage04() {
           たまにイラストも描いてます
         </p>
         <Image
-          src="/works/04-09.png"
+          src={asset("/works/04-09.png")}
           alt="グラフィック"
           width={1200}
           height={800}
@@ -34,7 +35,7 @@ export default function ProjectPage04() {
           unoptimized
         />
         <Image
-          src="/works/04-11.png"
+          src={asset("/works/04-11.png")}
           alt="グラフィック"
           width={1200}
           height={800}
@@ -42,7 +43,7 @@ export default function ProjectPage04() {
           unoptimized
         />
         <Image
-          src="/works/04-12.png"
+          src={asset("/works/04-12.png")}
           alt="グラフィック"
           width={1200}
           height={800}
@@ -50,7 +51,7 @@ export default function ProjectPage04() {
           unoptimized
         />
         <Image
-          src="/works/04-13.png"
+          src={asset("/works/04-13.png")}
           alt="グラフィック"
           width={1200}
           height={800}
@@ -58,7 +59,7 @@ export default function ProjectPage04() {
           unoptimized
         />
         <Image
-          src="/works/04-01.png"
+          src={asset("/works/04-01.png")}
           alt="グラフィック"
           width={1200}
           height={800}
@@ -66,7 +67,7 @@ export default function ProjectPage04() {
           unoptimized
         />
         <Image
-          src="/works/04-06.png"
+          src={asset("/works/04-06.png")}
           alt="グラフィック"
           width={1200}
           height={800}
@@ -74,7 +75,7 @@ export default function ProjectPage04() {
           unoptimized
         />
         <Image
-          src="/works/04-07.png"
+          src={asset("/works/04-07.png")}
           alt="グラフィック"
           width={1200}
           height={800}
@@ -82,7 +83,7 @@ export default function ProjectPage04() {
           unoptimized
         />
         <Image
-          src="/works/04-08.png"
+          src={asset("/works/04-08.png")}
           alt="グラフィック"
           width={1200}
           height={800}

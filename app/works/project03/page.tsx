@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/asset";
 import ExternalLinkButton from "@/components/ExternalLinkButton";
 import BackToTopButton from "@/components/BackToTopButton";
 
@@ -10,7 +11,7 @@ export default function ProjectPage03() {
 
       {/* メインビジュアル */}
       <Image
-        src="/works/03-01.png"
+        src={asset("/works/03-01.png")}
         alt="映画ポスター"
         width={1200}
         height={800}
@@ -31,7 +32,7 @@ export default function ProjectPage03() {
           17歳の多感な時期の迷いや両親の離婚と再婚、様々な感情を混沌とした配色、塗り方で表現した。
         </p>
         <Image
-          src="/works/03-02.png"
+          src={asset("/works/03-02.png")}
           alt="映画ポスター"
           width={1200}
           height={800}
