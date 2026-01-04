@@ -40,7 +40,7 @@ export default function Home() {
         <div className="flex flex-wrap justify-center">
           <h2 className="text-3xl font-semibold">竹内</h2>
           <p className="mt-6 text-zinc-800 font-bold leading-relaxed">
-            フロントエンド開発とUIデザインを中心に活動しています。
+            UIデザインとフロントエンド開発を中心に活動しています。
             このページはNext.jsを使用して作成しました。
           </p>
 
@@ -76,14 +76,14 @@ export default function Home() {
         <div className="relative w-full overflow-hidden">
           <div className="flex w-max animate-marquee">
             {/* 1セット目 */}
-            <span className="mr-12 text-3xl font-semibold">Works</span>
-            <span className="mr-12 text-3xl font-semibold">Works</span>
-            <span className="mr-12 text-3xl font-semibold">Works</span>
+            <span className="mr-12 text-3xl font-semibold">WORKS</span>
+            <span className="mr-12 text-3xl font-semibold">WORKS</span>
+            <span className="mr-12 text-3xl font-semibold">WORKS</span>
 
             {/* 2セット目（完全に同じ） */}
-            <span className="mr-12 text-3xl font-semibold">Works</span>
-            <span className="mr-12 text-3xl font-semibold">Works</span>
-            <span className="mr-12 text-3xl font-semibold">Works</span>
+            <span className="mr-12 text-3xl font-semibold">WORKS</span>
+            <span className="mr-12 text-3xl font-semibold">WORKS</span>
+            <span className="mr-12 text-3xl font-semibold">WORKS</span>
           </div>
         </div>
       </h2>
