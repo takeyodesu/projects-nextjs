@@ -60,24 +60,24 @@ export default function Home() {
       {/* =====================
         実績リスト
       ===================== */}
-      <section className="px-8 py-16">
+      <section className="px-8 py-16" id="works">
         <h2 className="mb-12 text-3xl font-semibold ">Works</h2>
 
         <div className="flex flex-wrap gap-24">
           <WorkCard
             title="ホロアースクリエイターツールズ"
             image="/works/05-01.png"
-            href="/works/project-a"
+            href="/works/project01"
           />
           <WorkCard
             title="ホロアースマーケットプレイスLP"
             image="/works/06-01.png"
-            href="/works/project-b"
+            href="/works/project02"
           />
           <WorkCard
             title="ホロアースWEBショップ"
             image="/works/07-01.png"
-            href="/works/project-c"
+            href="/works/project03"
           />
         </div>
       </section>
