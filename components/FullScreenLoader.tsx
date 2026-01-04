@@ -1,3 +1,6 @@
+type Props = {
+  className?: string;
+};
 export default function FullScreenLoader({ className }: Props) {
   return (
     <div
