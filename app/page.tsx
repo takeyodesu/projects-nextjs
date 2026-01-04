@@ -9,7 +9,13 @@ export default function Home() {
       {/* =====================
         ファーストビュー
       ===================== */}
-      <section className="min-h-[80vh] px-8 py-16">
+      <section
+        className="min-h-[90vh] px-8 py-16 
+      flex items-center justify-center
+      bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.05)),url('/bg-grid.png')]
+    bg-cover bg-center
+      "
+      >
         <FirstView />
       </section>
 
@@ -80,6 +86,11 @@ export default function Home() {
             href="/works/project03"
           />
         </div>
+      </section>
+      <section className="bg-zinc-50 py-2">
+        <p className="text-xs text-center text-zinc-500">
+          © 2026 takeyodesu. All Rights Reserved.
+        </p>
       </section>
     </main>
   );

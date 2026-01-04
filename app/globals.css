@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #efefef;
+  --background: #dbdbdb;
   --foreground: #171717;
 }
 
@@ -12,12 +12,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
@@ -43,4 +43,16 @@ body {
 .loading-dots::after {
   content: "";
   animation: dots 1.2s steps(4, end) infinite;
+}
+
+@keyframes cursor {
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: cursor 1s steps(1) infinite;
 }
