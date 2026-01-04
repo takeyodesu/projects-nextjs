@@ -24,7 +24,7 @@ export default function SocialIcon({ href, image, alt }: SocialIconProps) {
           transition
         "
       >
-        <Image src={image} width={16} height={16} alt={alt} />
+        <Image src={asset(image)} width={16} height={16} alt={alt} />
       </a>
     </li>
   );

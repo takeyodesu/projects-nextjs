@@ -16,7 +16,7 @@ export default function WorkCard({ title, href, image }: WorkCardProps) {
     >
       <div className="relative w-full h-80 overflow-hidden">
         <Image
-          src={image}
+          src={asset(image)}
           alt={title}
           fill
           className="object-cover border-2 border-zinc-800"

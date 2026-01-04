@@ -38,12 +38,12 @@ export default function FirstView() {
                   setTimeout(() => setShowMessage(false), 2000);
                 }}
                 className="
-          flex justify-center p-1 w-fit
-          bg-gray-50 shadow-[2px_2px_0_#666666]
-          active:translate-y-[2px]
-        "
+        flex justify-center p-1 w-fit
+        bg-gray-50 shadow-[2px_2px_0_#666666]
+        active:translate-y-[2px]
+      "
               >
-                <Image src={`/${icon}`} alt="" width={16} height={16} />
+                <Image src={asset(`/${icon}`)} alt="" width={16} height={16} />
               </button>
             )
           )}
