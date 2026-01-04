@@ -34,7 +34,7 @@ export default function Home() {
 
           <ul className="mt-6 flex gap-6">
             <SocialIcon
-              href="https://github.com/username"
+              href="https://github.com/takeyodesu"
               image="/Github.svg"
               alt="GitHub"
             />
