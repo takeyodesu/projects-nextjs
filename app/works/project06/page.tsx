@@ -31,6 +31,8 @@ export default function ProjectPage06() {
       <section className="mt-16 space-y-12">
         <p className="space-y-6 text-lg leading-relaxed">
           ホロアース クリエイターサービスPR用LP
+        </p>
+        <p className="space-y-6 text-lg leading-relaxed">
           構成やビジュアルのディレクション、デザインまで担当した。
         </p>
         <Image

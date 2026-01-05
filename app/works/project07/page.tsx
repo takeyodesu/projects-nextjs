@@ -30,8 +30,9 @@ export default function ProjectPage07() {
       {/* 説明 */}
       <section className="mt-16 space-y-12">
         <p className="space-y-6 text-lg leading-relaxed">
-          ホロアースアプリ内で使用可能な
-          アバターアイテムをWEB上で購入できるショップサイトの開発
+          ホロアースアプリ内で使用可能な、アバターアイテムをWEB上で購入できるショップサイトの開発。
+        </p>
+        <p className="space-y-6 text-lg leading-relaxed">
           一般的なファッションECサイトの設計をベースに、メタバース特有の仕様を取り入れ、直感的でスムーズな操作性を実現した。
         </p>
         <Image
@@ -44,7 +45,7 @@ export default function ProjectPage07() {
         />
         <p className="space-y-6 text-lg leading-relaxed">
           TypeScript /React のフロントエンド開発も一部担当した。
-          約3ヶ月の短い期間で開発しリリースした。
+          チーム全体で約3ヶ月の短い期間で開発しリリースした。
         </p>
         <Image
           src={asset("/works/07-03.png")}

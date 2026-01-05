@@ -23,6 +23,8 @@ export default function ProjectPage03() {
       <section className="mt-16 space-y-12">
         <p className="space-y-6 text-lg leading-relaxed">
           2019年制作物 二人体制の共同作品
+        </p>
+        <p className="space-y-6 text-lg leading-relaxed">
           早稲田大学人間科学部道岡円香さんとのコラボ作品として映画「めぐみ」のポスター制作。
           ぴあフィルムフェスティバルにて掲載された。
         </p>

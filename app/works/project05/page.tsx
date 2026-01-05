@@ -41,8 +41,7 @@ export default function ProjectPage05() {
           unoptimized
         />
         <p className="space-y-6 text-lg leading-relaxed">
-          イラスト画像を3Dアバターの服に貼り付け
-          オリジナルアイテムを作って販売することができる。
+          イラスト画像を3Dアバターの服に貼り付け、オリジナルアイテムを作って販売することができる。
           また販売アイテムの管理や、売上などが確認できる。
         </p>
         <Image

@@ -29,6 +29,8 @@ export default function ProjectPage02() {
       <section className="mt-16 space-y-12">
         <p className="space-y-6 text-lg leading-relaxed">
           2019年学生時代制作課題
+        </p>
+        <p className="space-y-6 text-lg leading-relaxed">
           インスタグラム上で色覚異常を体験することができるフィルターを作成した。
         </p>
         <Image
