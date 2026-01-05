@@ -12,9 +12,9 @@ export default function WorkCard({ title, href, image }: WorkCardProps) {
   return (
     <Link
       href={href}
-      className="block w-full mx-auto transition hover:-translate-y-1 relative"
+      className="block w-full mx-auto h-80 transition hover:-translate-y-1 relative"
     >
-      <div className="relative w-full h-80 overflow-hidden">
+      <div className="relative w-full h-full overflow-hidden">
         <Image
           src={asset(image)}
           alt={title}

@@ -79,26 +79,27 @@ export default function FirstView() {
       >
         {/* 見出し① */}
         <h1 className="w-fit text-3xl font-bold bg-[#60ffef] p-2">
-          <TypewriterText text="こんにちは" cursor />
+          <TypewriterText text="こんにちは" cursor delay={100} speed={150} />
         </h1>
 
         {/* 見出し② */}
         <h2 className="w-fit text-3xl font-bold text-white bg-zinc-800 p-2 mt-2">
-          <TypewriterText text="TAKEUCHI です" speed={90} />
+          <TypewriterText text="TAKEUCHI です" delay={700} speed={150} />
         </h2>
 
         {/* サブテキスト */}
         <p className="mt-6 text-xl font-bold text-zinc-800">
           <TypewriterText
             text="Web / UI Designer & Frontend Developer"
-            speed={30}
+            delay={700}
+            speed={60}
           />
         </p>
 
         {/* View Works */}
         <button
           onClick={() => {
-            const worksSection = document.getElementById("works");
+            const worksSection = document.querySelector(".works-list");
             worksSection?.scrollIntoView({
               behavior: "smooth",
               block: "start",
@@ -122,7 +123,7 @@ export default function FirstView() {
         <div
           className={`
             absolute -bottom-20 -right-8
-            transition-all duration-700 delay-1000
+            transition-all duration-700 delay-3100
             ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}
           `}
         >

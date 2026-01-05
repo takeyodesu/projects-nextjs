@@ -4,6 +4,7 @@ import WorkCard from "@/components/WorkCard";
 import SocialIcon from "@/components/SocialIcon";
 import FirstView from "@/components/FirstView";
 import ScrollToTop from "@/components/ScrollToTop";
+import Marquee from "@/components/Marquee";
 
 export default function Home() {
   return (
@@ -72,22 +73,14 @@ export default function Home() {
       {/* =====================
         実績リスト
       ===================== */}
-      <h2 className="overflow-hidden border-y-2 border-zinc-800 py-4 bg-zinc-50">
-        <div className="relative w-full overflow-hidden">
-          <div className="flex w-max animate-marquee">
-            {/* 1セット目 */}
-            <span className="mr-12 text-3xl font-semibold">WORKS</span>
-            <span className="mr-12 text-3xl font-semibold">WORKS</span>
-            <span className="mr-12 text-3xl font-semibold">WORKS</span>
-
-            {/* 2セット目（完全に同じ） */}
-            <span className="mr-12 text-3xl font-semibold">WORKS</span>
-            <span className="mr-12 text-3xl font-semibold">WORKS</span>
-            <span className="mr-12 text-3xl font-semibold">WORKS</span>
-          </div>
-        </div>
+      <h2 className="overflow-hidden border-y-2 border-zinc-800 py-4 bg-zinc-50 works-list">
+        <Marquee className="w-full" speedPxPerSec={40}>
+          <span className="mr-12 text-3xl font-semibold">WORKS</span>
+          <span className="mr-12 text-3xl font-semibold">WORKS</span>
+          <span className="mr-12 text-3xl font-semibold">🐟</span>
+        </Marquee>
       </h2>
-      <section className="px-8 py-16" id="works">
+      <section className="px-8 py-16">
         <div className="flex flex-wrap gap-24">
           <WorkCard
             title="ホロアースクリエイターツールズ"
