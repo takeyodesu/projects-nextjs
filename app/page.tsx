@@ -77,7 +77,7 @@ export default function Home() {
         <Marquee className="w-full" speedPxPerSec={40}>
           <span className="mr-12 text-3xl font-semibold">WORKS</span>
           <span className="mr-12 text-3xl font-semibold">WORKS</span>
-          <span className="mr-12 text-3xl font-semibold">🐟</span>
+          <span className="mr-12 text-3xl font-semibold">WORKS</span>
         </Marquee>
       </h2>
       <section className="px-8 py-16">
