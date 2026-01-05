@@ -78,7 +78,7 @@ export default function FirstView() {
         `}
       >
         {/* 見出し① */}
-        <h1 className="w-fit text-3xl font-bold bg-[#60ffef] p-2">
+        <h1 className="w-fit text-3xl text-zinc-800 font-bold bg-[#60ffef] p-2">
           <TypewriterText text="こんにちは" cursor delay={100} speed={150} />
         </h1>
 
