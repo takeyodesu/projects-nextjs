@@ -41,8 +41,9 @@ export default function Home() {
         <div className="flex flex-wrap justify-center">
           <h2 className="text-3xl font-semibold">竹内</h2>
           <p className="mt-6 text-zinc-800 font-bold leading-relaxed">
-            UIデザインとフロントエンド開発を中心に活動しています。
-            このページはNext.jsを使用して作成しました。
+            WEBとかアプリとかつくるニート。
+            UIデザインとフロントエンド開発を中心にやってます。 このページはReact
+            / Next.jsを使用して作成しました。
           </p>
 
           <ul className="mt-6 flex gap-6">
@@ -62,7 +63,7 @@ export default function Home() {
               alt="X (Twitter)"
             />
             <SocialIcon
-              href="https://twitter.com/takeyodesu"
+              href="https://instagram.com/takeyodesu"
               image="/Instagram.png"
               alt="Instagram"
             />
