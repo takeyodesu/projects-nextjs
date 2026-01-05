@@ -38,7 +38,7 @@ export default function Home() {
           className="border-2 border-zinc-800 shadow-[8px_8px_0_#60ffef]"
         />
 
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center md:flex-col md:justify-start">
           <h2 className="text-3xl font-semibold">竹内</h2>
           <p className="mt-6 text-zinc-800 font-bold leading-relaxed">
             WEBとかアプリとかつくるニート。
