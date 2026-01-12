@@ -2,7 +2,7 @@
 
 :root {
   --background: #dbdbdb;
-  --foreground: #171717;
+  --foreground: #131313;
 }
 
 @theme inline {
@@ -25,74 +25,69 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ローディング */
-@keyframes dots {
+/* =========================
+   Build-style text animation
+   ========================= */
+
+.build-text {
+  position: relative;
+  letter-spacing: 0.15em;
+}
+
+/* ランダムに文字が入れ替わるような擬似表現 */
+.build-text::after {
+  content: "█▓▒░";
+  position: absolute;
+  right: -1.2em;
+  animation: glitch-text 0.6s steps(1) infinite;
+  opacity: 0.8;
+}
+
+@keyframes glitch-text {
   0% {
-    content: "";
+    content: "█";
   }
   25% {
-    content: ".";
+    content: "▓";
   }
   50% {
-    content: "..";
+    content: "▒";
   }
   75% {
-    content: "...";
-  }
-}
-
-.loading-dots::after {
-  content: "";
-  animation: dots 1.2s steps(4, end) infinite;
-}
-/* ローディング図形 */
-/* --- Pixel bouncer loader --- */
-.pixel-bouncer {
-  display: flex;
-  gap: 10px;
-  align-items: flex-end;
-}
-
-/* 四角いピクセル感 */
-.pixel-cube {
-  width: 18px;
-  height: 18px;
-  border: 2px solid #111827; /* zinc-900相当 */
-  box-shadow: 2px 2px 0 #111827; /* ドット絵っぽい影 */
-  image-rendering: pixelated;
-  animation: pixel-hop 700ms steps(4, end) infinite;
-}
-
-/* 色違い（レトロっぽい3色） */
-.cube-1 {
-  background: #ffffff;
-  animation-delay: 0ms;
-}
-.cube-2 {
-  background: #979797;
-  animation-delay: 120ms;
-}
-.cube-3 {
-  background: #ffffff;
-  animation-delay: 240ms;
-}
-.cube-4 {
-  background: #979797;
-  animation-delay: 360ms;
-}
-
-@keyframes pixel-hop {
-  0% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(-14px);
-  }
-  40% {
-    transform: translateY(0);
+    content: "░";
   }
   100% {
-    transform: translateY(0);
+    content: "█";
+  }
+}
+
+/* =========================
+     Thin loading bar
+     ========================= */
+
+.loading-bar {
+  width: 220px;
+  height: 2px;
+  background: #27272a; /* zinc-800 */
+  overflow: hidden;
+  position: relative;
+}
+
+.loading-bar span {
+  position: absolute;
+  left: -40%;
+  width: 40%;
+  height: 100%;
+  background: #e5e7eb; /* zinc-200 */
+  animation: loading-bar-move 1.2s ease-in-out infinite;
+}
+
+@keyframes loading-bar-move {
+  0% {
+    left: -40%;
+  }
+  100% {
+    left: 100%;
   }
 }
 
