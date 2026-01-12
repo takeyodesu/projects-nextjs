@@ -23,9 +23,6 @@ export default function ProjectPage04() {
         <p className="space-y-6 text-lg leading-relaxed">
           バナー、ロゴ、印刷物などのグラフィック制作
         </p>
-        <p className="space-y-6 text-lg leading-relaxed">
-          たまにイラストも描いてます
-        </p>
         <Image
           src={asset("/works/04-09.png")}
           alt="グラフィック"
@@ -66,6 +63,9 @@ export default function ProjectPage04() {
           className="border-2 border-zinc-800 mb-12"
           unoptimized
         />
+        <p className="space-y-6 text-lg leading-relaxed">
+          たまにイラストも描いてます
+        </p>
         <Image
           src={asset("/works/04-06.png")}
           alt="グラフィック"

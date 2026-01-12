@@ -7,7 +7,7 @@ export default function FullScreenLoader({ className = "" }: Props) {
     <div
       className={`fixed inset-0 z-50 flex flex-col items-center justify-center gap-6 bg-zinc-900 ${className}`}
     >
-      <p className="build-text font-mono text-white text-xl tracking-widest">
+      <p className="build-text font-bold  text-white text-xl tracking-widest">
         BUILDING
       </p>
 

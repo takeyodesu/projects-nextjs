@@ -64,12 +64,12 @@ export default function ProjectPage05() {
       <dl className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div>
           <dt className="font-semibold">Role</dt>
-          <dd className="text-zinc-600">UI Design / Frontend</dd>
+          <dd className="text-zinc-600">Planning / UI Design / Frontend</dd>
         </div>
 
         <div>
           <dt className="font-semibold">Tech</dt>
-          <dd className="text-zinc-600">React / TypeScript / Panda CSS</dd>
+          <dd className="text-zinc-600">React / TypeScript</dd>
         </div>
       </dl>
       {/* もどるボタン */}

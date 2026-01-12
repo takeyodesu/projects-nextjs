@@ -68,7 +68,7 @@ export default function ProjectPage07() {
         </div>
         <div>
           <dt className="font-semibold">Tech</dt>
-          <dd className="text-zinc-600">React / TypeScript / Panda CSS</dd>
+          <dd className="text-zinc-600">React / TypeScript</dd>
         </div>
       </dl>
       {/* もどるボタン */}
