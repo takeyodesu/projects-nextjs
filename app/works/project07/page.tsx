@@ -35,6 +35,10 @@ export default function ProjectPage07() {
         <p className="space-y-6 text-lg leading-relaxed">
           一般的なファッションECサイトの設計をベースに、メタバース特有の仕様を取り入れ、直感的でスムーズな操作性を実現した。
         </p>
+        <p className="space-y-6 text-lg leading-relaxed">
+          TypeScript /React のフロントエンド開発も一部担当した。
+          チーム全体で約3ヶ月の短い期間で開発しリリースした。
+        </p>
         <Image
           src={asset("/works/07-02.png")}
           alt="マーケットプレイスLP"
@@ -43,10 +47,14 @@ export default function ProjectPage07() {
           className="border-2 border-zinc-800 mb-12"
           unoptimized
         />
-        <p className="space-y-6 text-lg leading-relaxed">
-          TypeScript /React のフロントエンド開発も一部担当した。
-          チーム全体で約3ヶ月の短い期間で開発しリリースした。
-        </p>
+        <Image
+          src={asset("/works/07-04.png")}
+          alt="マーケットプレイスLP"
+          width={1200}
+          height={800}
+          className="border-2 border-zinc-800 mb-12"
+          unoptimized
+        />
         <Image
           src={asset("/works/07-03.png")}
           alt="マーケットプレイスLP"

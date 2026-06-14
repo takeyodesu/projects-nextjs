@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "TAKEUCHI Portfolio",
-  description: "Web / UI Designer & Frontend Developer",
+  description: "Web / UI Designer & Developer",
 };
 
 export default function RootLayout({

@@ -7,7 +7,9 @@ export default function ProjectPage06() {
   return (
     <main className="px-8 py-20 max-w-5xl mx-auto">
       {/* タイトル */}
-      <h1 className="text-4xl font-bold mb-8">マーケットプレイスLP</h1>
+      <h1 className="text-4xl font-bold mb-8">
+        ホロアースマーケットプレイスLP
+      </h1>
 
       {/* メインビジュアル */}
 

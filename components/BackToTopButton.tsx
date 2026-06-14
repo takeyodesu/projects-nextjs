@@ -20,7 +20,7 @@ export default function BackToTopButton() {
       type="button"
       onClick={handleClick}
       className="
-        fixed bottom-6 right-6
+        fixed bottom-6 left-6
         inline-flex items-center gap-2
         w-fit rounded-full
         px-2 py-1
