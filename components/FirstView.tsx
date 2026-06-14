@@ -72,13 +72,13 @@ export default function FirstView() {
           relative w-full h-fit p-8
           bg-gradient-to-b from-[#666] to-[#efefef]
           border-2 border-zinc-800
-          shadow-[8px_8px_0_#ff04e8]
+          shadow-[8px_8px_0_#c8ff00]
           transition-all duration-700 ease-out
           ${mounted ? "opacity-100" : "opacity-0"}
         `}
       >
         {/* 見出し① */}
-        <h1 className="w-fit text-3xl text-white font-bold bg-[#ff04e8] p-2">
+        <h1 className="w-fit text-3xl text-zinc-800 font-bold bg-[#c8ff00] p-2">
           <TypewriterText text="こんにちは" cursor delay={100} speed={150} />
         </h1>
 

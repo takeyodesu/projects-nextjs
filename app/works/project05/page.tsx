@@ -20,13 +20,18 @@ export default function ProjectPage05() {
         className="border-2 border-zinc-800 mb-12"
         unoptimized
       />
-      <div className="mb-12">
+      <div className="mb-2">
         <ExternalLinkButton
           href="https://creator.holoearth.com/creator/items/"
           label="View Website"
         />
       </div>
-
+      <div className="mb-12">
+        <ExternalLinkButton
+          href="https://holoearth.com/holoearth-marketplace/"
+          label="View Website"
+        />
+      </div>
       {/* 説明 */}
       <section className="mt-16 space-y-12">
         <p className="space-y-6 text-lg leading-relaxed">

@@ -37,7 +37,7 @@ export default function Home() {
               alt="プロフィール画像"
               width={200}
               height={200}
-              className="border-2 border-zinc-800 shadow-[8px_8px_0_#ff04e8]"
+              className="border-2 border-zinc-800 shadow-[8px_8px_0_#c8ff00]"
             />
 
             <div className="flex flex-wrap justify-center md:flex-col md:justify-start">
