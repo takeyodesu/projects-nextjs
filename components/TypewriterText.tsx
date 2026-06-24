@@ -53,7 +53,7 @@ export default function TypewriterText({
   }, [index, text, speed, started]);
 
   return (
-    <span className={className}>
+    <span className={`whitespace-pre-line ${className}`}>
       {displayed}
       {cursor && <span className="cursor">|</span>}
     </span>

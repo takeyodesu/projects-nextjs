@@ -48,7 +48,7 @@ export default function Home() {
                 このページはNext.jsを使用して作成しました。
               </p>
 
-              <ul className="mt-6 flex gap-6">
+              {/* <ul className="mt-6 flex gap-6">
                 <SocialIcon
                   href="https://www.figma.com/proto/zxn8RGtFT49gWPFkknQLON/takeyo-projects?t=W5TYvNpKErSba2Qr-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2"
                   image="/Figma.svg"
@@ -64,7 +64,7 @@ export default function Home() {
                   image="/Instagram.png"
                   alt="Instagram"
                 />
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>

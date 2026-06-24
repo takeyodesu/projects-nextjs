@@ -61,7 +61,7 @@ export default function FirstView() {
         animate-pulse
       "
           >
-            すみませんこれはボタンではありません😂
+            すみませんこれはボタンではありません🙇‍♂️
           </p>
         )}
       </div>
@@ -90,7 +90,8 @@ export default function FirstView() {
         {/* サブテキスト */}
         <p className="mt-6 text-xl font-bold text-zinc-800">
           <TypewriterText
-            text="Web / UI Designer & Developer"
+            text={`Product Designer
+UI Designer / Frontend Developer`}
             delay={700}
             speed={60}
           />
