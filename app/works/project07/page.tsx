@@ -13,7 +13,7 @@ export default function ProjectPage07() {
 
       <Image
         src={asset("/works/07-01.png")}
-        alt="マーケットプレイスLP"
+        alt="ホロアースWEBショップ"
         width={1200}
         height={800}
         className="border-2 border-zinc-800 mb-12"
@@ -22,7 +22,7 @@ export default function ProjectPage07() {
 
       <div className="mb-12">
         <ExternalLinkButton
-          href="https://creator.holoearth.com/shop/products"
+          href="https://x.com/Holoearth_JP/status/1966049682075038007"
           label="View Website"
         />
       </div>

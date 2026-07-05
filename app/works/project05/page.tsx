@@ -20,12 +20,12 @@ export default function ProjectPage05() {
         className="border-2 border-zinc-800 mb-12"
         unoptimized
       />
-      <div className="mb-2">
+      {/* <div className="mb-2">
         <ExternalLinkButton
           href="https://creator.holoearth.com/creator/items/"
           label="View Website"
         />
-      </div>
+      </div> */}
       <div className="mb-12">
         <ExternalLinkButton
           href="https://holoearth.com/holoearth-marketplace/"
