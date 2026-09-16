@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import FullScreenLoader from "@/components/FullScreenLoader";
 
+const LOADING_DURATION = 2000;
+
 export default function ClientLayout({
   children,
 }: {
@@ -15,7 +17,7 @@ export default function ClientLayout({
     // 演出用ローディング時間
     const timer = setTimeout(() => {
       setVisible(false); // フェード開始
-    }, 2000);
+    }, LOADING_DURATION);
 
     return () => clearTimeout(timer);
   }, []);
@@ -35,6 +37,7 @@ export default function ClientLayout({
     <>
       {loading && (
         <FullScreenLoader
+          duration={LOADING_DURATION}
           className={`transition-opacity duration-700 ${
             visible ? "opacity-100" : "opacity-0"
           }`}

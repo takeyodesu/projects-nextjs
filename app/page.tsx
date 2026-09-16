@@ -33,7 +33,7 @@ export default function Home() {
             left-[-22px] top-[-24px]
             whitespace-nowrap leading-none font-bold
             font-[family-name:var(--font-line-seed-jp)]
-            text-[18vw] text-[#c1ff1e]
+            text-[16.5vw] text-[#c1ff1e]
           "
         >
           UI Designer
