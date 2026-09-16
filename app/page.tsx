@@ -13,7 +13,7 @@ export default function Home() {
         ファーストビュー
       ===================== */}
       <section
-        className="min-h-[90vh] px-8 py-16 
+        className="relative min-h-[90vh] px-8 py-16 overflow-hidden
       flex items-center justify-center
       bg-cover bg-center
       "
@@ -23,6 +23,38 @@ export default function Home() {
           )})`,
         }}
       >
+        {/* 背景テキスト（PC） */}
+        <p
+          aria-hidden
+          className="
+            pointer-events-none select-none
+            absolute z-0
+            hidden min-[800px]:block
+            left-[-22px] top-[-24px]
+            whitespace-nowrap leading-none font-bold
+            font-[family-name:var(--font-line-seed-jp)]
+            text-[18vw] text-[#c1ff1e]
+          "
+        >
+          UI Designer
+        </p>
+
+        {/* 背景テキスト（SP） */}
+        <div
+          aria-hidden
+          className="
+            pointer-events-none select-none
+            absolute z-0 inset-y-0 top-0 left-0
+            min-[800px]:hidden
+            w-[16vh]
+            flex items-center justify-center
+          "
+        >
+          <p className="rotate-90 whitespace-nowrap leading-none font-bold font-[family-name:var(--font-line-seed-jp)] text-[16vh] text-[#c1ff1e] mt-16 -ml-10">
+            UI Designer
+          </p>
+        </div>
+
         <FirstView />
       </section>
 

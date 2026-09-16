@@ -14,7 +14,7 @@ export default function FirstView() {
   }, []);
 
   return (
-    <div>
+    <div className="relative z-10 w-full max-w-md min-[800px]:max-w-2xl">
       {/* ウィンドウヘッダー */}
       <div
         className={`
@@ -78,12 +78,12 @@ export default function FirstView() {
         `}
       >
         {/* 見出し① */}
-        <h1 className="w-fit text-3xl text-zinc-800 font-bold bg-[#c8ff00] p-2">
+        <h1 className="w-fit text-3xl min-[800px]:text-[56px] text-zinc-800 font-bold bg-[#c8ff00] p-2">
           <TypewriterText text="こんにちは" cursor delay={100} speed={150} />
         </h1>
 
         {/* 見出し② */}
-        <h2 className="w-fit text-3xl font-bold text-white bg-zinc-800 p-2 mt-2">
+        <h2 className="w-fit text-3xl min-[800px]:text-[56px] font-bold text-white bg-zinc-800 p-2 mt-2">
           <TypewriterText text="TAKEUCHI です" delay={700} speed={150} />
         </h2>
 

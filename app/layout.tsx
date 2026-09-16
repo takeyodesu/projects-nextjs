@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import ClientLayout from "./ClientLayout";
 import "./globals.css";
 const isProd = process.env.NODE_ENV === "production";
@@ -15,6 +16,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const lineSeedJp = localFont({
+  src: "../public/fonts/LINESeedJP-Bold.woff2",
+  variable: "--font-line-seed-jp",
+  weight: "700",
+});
+
 export const metadata: Metadata = {
   title: "TAKEUCHI Portfolio",
   description: "Web / UI Designer & Developer",
@@ -28,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${lineSeedJp.variable} antialiased`}
         style={{
           ["--asset-bg-grid" as any]: `${prefix}/bg-grid.png`,
         }}
