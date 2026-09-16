@@ -3,6 +3,7 @@ import { asset } from "@/asset";
 import WorkCard from "@/components/WorkCard";
 import SocialIcon from "@/components/SocialIcon";
 import FirstView from "@/components/FirstView";
+import FloatingIcon from "@/components/FloatingIcon";
 import ScrollToTop from "@/components/ScrollToTop";
 import Marquee from "@/components/Marquee";
 
@@ -54,6 +55,43 @@ export default function Home() {
             UI Designer
           </p>
         </div>
+
+        {/* MVアイコン（PC） */}
+        <FloatingIcon
+          icon="/icons/icon-globe.svg"
+          size={72}
+          rotate={-30}
+          className="left-[5%] top-[10%] z-[5] min-[800px]:top-[70%]"
+          animationDelay="0s"
+        />
+        <FloatingIcon
+          icon="/icons/icon-music.svg"
+          size={72}
+          rotate={11}
+          className="left-[40%] top-[5%] z-[5] min-[800px]:left-[10%] min-[800px]:top-[53%]"
+          animationDelay="0.4s"
+        />
+        <FloatingIcon
+          icon="/icons/icon-heart.svg"
+          size={80}
+          rotate={19}
+          className="right-[5%] top-[90%] z-[5] min-[800px]:top-[66%]"
+          animationDelay="0.8s"
+        />
+        <FloatingIcon
+          icon="/icons/icon-controller.svg"
+          size={76}
+          rotate={-26}
+          className="z-[5] right-[8%] top-[15%] min-[800px]:right-[5%] min-[800px]:top-[38%]"
+          animationDelay="1.2s"
+        />
+        <FloatingIcon
+          icon="/icons/icon-gem.svg"
+          size={64}
+          rotate={-17}
+          className="z-[5] left-[25%] top-[86%]"
+          animationDelay="1.6s"
+        />
 
         <FirstView />
       </section>
