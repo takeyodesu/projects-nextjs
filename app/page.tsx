@@ -84,6 +84,12 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <div className="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
             <WorkCard
+              title="hololive 新配信アプリ"
+              image="/works/08-01.png"
+              href="/works/project08"
+            />
+
+            <WorkCard
               title="ホロアースクリエイターツールズ"
               image="/works/05-01.png"
               href="/works/project05"
